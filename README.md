@@ -57,6 +57,7 @@ This project utilizes Selenium to automate image generation on Discord using the
 - Ensure `chromedriver` is correctly installed and accessible in your system.
 - Adjust file paths and configurations as needed for your environment.
 - Make sure to have an active Discord session for the bot to work properly.
-```
+
+
 
 Happy image generation!
