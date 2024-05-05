@@ -1,7 +1,8 @@
+
 # Image Generation Projects
 
 ## Overview
-This repository comprises scripts designed for image generation utilizing three distinct models: Gemini, Midjourney, and Copilot. The prompts necessary for image generation are stored in the prompts.txt file within the same directory.
+This repository comprises scripts designed for image generation utilizing three distinct models: Gemini, Midjourney, and Copilot. The prompts necessary for image generation are stored in the `prompts.txt` file within the same directory.
 
 ## File Structure
 - `Gemini.ipynb`: Jupyter Notebook dedicated to image generation using the Gemini model.
@@ -9,38 +10,53 @@ This repository comprises scripts designed for image generation utilizing three 
 - `Copilot.ipynb`: Jupyter Notebook dedicated to image generation using the Copilot model.
 - `prompts.txt`: Text file containing prompts essential for image generation.
 
-## Instructions
-1. Ensure you have installed the requisite dependencies (Selenium, Requests, etc.).
-2. Open the IPYNB file corresponding to the desired model (Gemini, Midjourney, Copilot).
-3. Execute the cells within the IPYNB file to generate images based on prompts sourced from prompts.txt.
+# Midjourney Image Generation
+
+This project utilizes Selenium to automate image generation on Discord using the Midjourney bot.
+
+## Installation
+
+1. Install the necessary packages:
+   ```bash
+   !pip install selenium chromedriver-autoinstaller webdriver-manager undetected-chromedriver scikit-image user_agent pyautogui
+   ```
+
+2. Update system packages:
+   ```bash
+   !apt-get update
+   !apt-get install -y chromium-browser
+   !apt-get install chromium-chromedriver
+   ```
 
 ## Usage
-1. Open the relevant IPYNB file.
-2. Load prompts from prompts.txt using Python code.
-3. Utilize Selenium or other tools demonstrated in the code to interact with the image generation platform.
-4. Follow the instructions provided within the IPYNB file to generate and download images.
 
-## Code Snippets
-Below are key code snippets employed in the IPYNB files:
+1. Clone the repository or download the code files.
+2. Make sure you have the required packages installed as per the installation instructions.
+3. Run the code to generate images based on prompts provided in the `prompts.txt` file.
 
-### Loading Prompts from prompts.txt
-```python
-with open('prompts.txt', 'r') as file:
-    prompts = file.readlines()
+## Code Overview
+
+- `main.ipynb`: Contains the main code for image generation. (main - Gemini, Copilot or Midjourney)
+- `prompts.txt`: Stores the prompts for generating images, with each prompt on a new line.
+
+## How It Works
+
+1. Reads prompts from `prompts.txt`.
+2. Uses Selenium to interact with Discord and the Midjourney bot.
+3. Enters prompts into Discord, triggering image generation.
+4. Downloads and processes generated images into the `Midjourney` and `FMid` folders.
+5. Utilizes PyAutoGUI for random mouse movements during automation.
+
+## Folder Structure
+
+- `Output/`: Stores original images downloaded from Discord. (Output - Gemini, Copilot or Midjourney)
+- `FMid/`: Contains processed images after cropping and resizing. (Only for Midjourney)
+
+## Important Notes
+
+- Ensure `chromedriver` is correctly installed and accessible in your system.
+- Adjust file paths and configurations as needed for your environment.
+- Make sure to have an active Discord session for the bot to work properly.
 ```
-
-### Sending Prompts and Downloading Images using Selenium
-```python
-# Sending prompts and downloading images using Selenium
-for prompt_text in prompts:
-    # Sending prompt to image generation platform
-    # Waiting for image generation
-    # Downloading the generated image
-    # ...
-```
-
-## Notes
-- Ensure your internet connection is active for the image generation to function.
-- Review prompts.txt for available prompts and make necessary additions or edits.
 
 Happy image generation!
