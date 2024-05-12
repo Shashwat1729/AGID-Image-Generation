@@ -8,6 +8,7 @@ This repository comprises scripts designed for image generation utilizing three 
 - `Gemini.ipynb`: Jupyter Notebook dedicated to image generation using the Gemini model.
 - `Midjourney.ipynb`: Jupyter Notebook dedicated to image generation using the Midjourney model.
 - `Copilot.ipynb`: Jupyter Notebook dedicated to image generation using the Copilot model.
+- `Fast_hours_midjourney.ipynb`: Jupyter Notebook dedicated to automate actions on the Midjourney website to simulate user activity to obtain fast hours.
 - `prompts.txt`: Text file containing prompts essential for image generation.
 
 # Midjourney Image Generation
