@@ -46,12 +46,13 @@ This project utilizes Selenium to automate image generation on Discord using the
 2. Uses Selenium to interact with Discord and the Midjourney bot.
 3. Enters prompts into Discord, triggering image generation.
 4. Downloads and processes generated images into the `Midjourney` and `FMid` folders.
-5. Utilizes PyAutoGUI for random mouse movements during automation.
+5. Script incorporates random time delays and mouse movements to simulate human-like interactions. This helps in avoiding detection by automated systems and enhances the realism of the automation process.
 
-## Folder Structure
+## File Naming and Management
 
-- `Output/`: Stores original images downloaded from Discord. (Output - Gemini, Copilot or Midjourney)
-- `FMid/`: Contains processed images after cropping and resizing. (Only for Midjourney)
+1. Images are named systematically as Tweet_1.jpeg, Tweet_2.jpeg, etc.
+2. Duplicate images are handled by keeping only the first instance and skipping subsequent duplicates.
+3. Missing images are skipped during processing to ensure smooth execution.
 
 ## Important Notes
 
