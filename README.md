@@ -1,4 +1,4 @@
-# AGID Image Generation
+# Image Generation
 
 Automate high-quality image creation using AI-powered tools like Midjourney, Copilot, and Gemini. This project integrates these models for streamlined and efficient image generation, utilizing custom prompts and automation scripts.
 
